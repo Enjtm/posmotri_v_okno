@@ -235,7 +235,7 @@ ol {
   bottom: 0px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  
 }
 
 .content__video-card {
@@ -275,6 +275,10 @@ ol {
 
 .content__list-item {
   width: 398px;
+}
+
+.content__list-item:not(:last-child){
+    padding-bottom: 30px;
 }
 
 .content__list-item:active {

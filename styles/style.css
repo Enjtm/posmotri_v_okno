@@ -44,7 +44,6 @@ ol {
   position: absolute; /* элемент вырывают из потока */
   width: 1px; /* делают элемент очень маленьким, но таким, чтобы не пропал совсем */
   height: 1px;
-  margin: -1px; /* элемент убирают из поля зрения, сдвинув на размер самого себя */
   padding: 0; /* обнуляют отступы, они есть у некоторых элементов по умолчанию */
   border: 0; /* убирают границу, она тоже может быть у каких-то элементов */
   clip: rect(0 0 0 0); /* это свойство обрезает видимую область до нулевого значения */
@@ -68,6 +67,7 @@ ol {
 
 .result__video-container{
   position: relative;
+  height: 386px;
 }
 
 .result__video {
@@ -278,17 +278,14 @@ ol {
 }
 
 .content__list-item:not(:last-child){
-    padding-bottom: 30px;
-}
-
-.content__list-item:active {
-  background-color: white;
+    margin-bottom: 30px;
 }
 
 .content__card-link {
   display: block;
   text-decoration: none;
   color: white;
+  margin: 2px;
 }
 
 .content__card-link:hover {
